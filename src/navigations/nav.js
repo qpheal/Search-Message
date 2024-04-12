@@ -24,7 +24,7 @@ const App = () => {
             component={messages}
           />
           <Stack.Screen
-            options={{ headerShown: false }}
+            option={{ headerShown: false }}
             name="MessageDetail"
             component={messageDetail}
           />

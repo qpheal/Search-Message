@@ -7,7 +7,7 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import MessageHeader from "../components/messageHeader";
 import messsage from "../mockData/messagenotification";
-import Footer from "../components/footer"
+import Footer from "../components/footer";
 
 const Message = () => {
   return (
@@ -27,7 +27,12 @@ const Message = () => {
 
                   <View className="flex-1">
                     <View className="space-y-1">
-                      <Text style={{fontSize: hp("2%")}}className="font-700 text-[16px]">{item.name}</Text>
+                      <Text
+                        style={{ fontSize: hp("2%") }}
+                        className="font-700 text-[16px]"
+                      >
+                        {item.name}
+                      </Text>
                       <Text numberOfLines={3} className="text-gray-500">
                         {item.message}
                       </Text>
@@ -48,7 +53,7 @@ const Message = () => {
         </View>
       </ScrollView>
 
-      <Footer/>
+      <Footer />
     </SafeAreaView>
   );
 };
